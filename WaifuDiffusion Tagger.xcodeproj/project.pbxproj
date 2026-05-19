@@ -6,23 +6,46 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B43792182FBBE72500054E8B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B43792142FBBE72500054E8B /* Assets.xcassets */; };
+		B43792192FBBE72500054E8B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43792152FBBE72500054E8B /* ContentView.swift */; };
+		B437921A2FBBE72500054E8B /* TaggerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43792162FBBE72500054E8B /* TaggerApp.swift */; };
+		B437921E2FBBE75300054E8B /* ViewCollection in Frameworks */ = {isa = PBXBuildFile; productRef = B437921D2FBBE75300054E8B /* ViewCollection */; };
+		B43792212FBBE75B00054E8B /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = B43792202FBBE75B00054E8B /* Defaults */; };
+		B43792242FBBE7AE00054E8B /* swift-wd-tagger in Frameworks */ = {isa = PBXBuildFile; productRef = B43792232FBBE7AE00054E8B /* swift-wd-tagger */; };
+		B43792272FBBE7EA00054E8B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43792262FBBE7E800054E8B /* Coordinator.swift */; };
+		B43792292FBBEB6B00054E8B /* ThresholdParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43792282FBBEB6000054E8B /* ThresholdParameters.swift */; };
+		B437922B2FBBEC4800054E8B /* ThresholdEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437922A2FBBEC4400054E8B /* ThresholdEditor.swift */; };
+		B437922D2FBBF1E500054E8B /* InputImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437922C2FBBF1E300054E8B /* InputImageView.swift */; };
+		B437922F2FBBF20300054E8B /* ThresholdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B437922E2FBBF20000054E8B /* ThresholdsView.swift */; };
+		B43792312FBBF22600054E8B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43792302FBBF22400054E8B /* DetailsView.swift */; };
+		B43792332FBBF75000054E8B /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43792322FBBF74B00054E8B /* TagsView.swift */; };
+		B43792352FBC175400054E8B /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = B43792342FBC175400054E8B /* AppIcon.icon */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B43792042FBBE71500054E8B /* WaifuDiffusion Tagger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaifuDiffusion Tagger.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B43792142FBBE72500054E8B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B43792152FBBE72500054E8B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B43792162FBBE72500054E8B /* TaggerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggerApp.swift; sourceTree = "<group>"; };
+		B43792262FBBE7E800054E8B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		B43792282FBBEB6000054E8B /* ThresholdParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdParameters.swift; sourceTree = "<group>"; };
+		B437922A2FBBEC4400054E8B /* ThresholdEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdEditor.swift; sourceTree = "<group>"; };
+		B437922C2FBBF1E300054E8B /* InputImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputImageView.swift; sourceTree = "<group>"; };
+		B437922E2FBBF20000054E8B /* ThresholdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThresholdsView.swift; sourceTree = "<group>"; };
+		B43792302FBBF22400054E8B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		B43792322FBBF74B00054E8B /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
+		B43792342FBC175400054E8B /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B43792062FBBE71500054E8B /* WaifuDiffusion Tagger */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "WaifuDiffusion Tagger";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B43792012FBBE71500054E8B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43792242FBBE7AE00054E8B /* swift-wd-tagger in Frameworks */,
+				B43792212FBBE75B00054E8B /* Defaults in Frameworks */,
+				B437921E2FBBE75300054E8B /* ViewCollection in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +55,7 @@
 		B43791FB2FBBE71500054E8B = {
 			isa = PBXGroup;
 			children = (
-				B43792062FBBE71500054E8B /* WaifuDiffusion Tagger */,
+				B43792172FBBE72500054E8B /* WaifuDiffusion Tagger */,
 				B43792052FBBE71500054E8B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +66,48 @@
 				B43792042FBBE71500054E8B /* WaifuDiffusion Tagger.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B43792132FBBE72500054E8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B43792152FBBE72500054E8B /* ContentView.swift */,
+				B437922C2FBBF1E300054E8B /* InputImageView.swift */,
+				B43792302FBBF22400054E8B /* DetailsView.swift */,
+				B43792322FBBF74B00054E8B /* TagsView.swift */,
+				B437922E2FBBF20000054E8B /* ThresholdsView.swift */,
+				B437922A2FBBEC4400054E8B /* ThresholdEditor.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B43792172FBBE72500054E8B /* WaifuDiffusion Tagger */ = {
+			isa = PBXGroup;
+			children = (
+				B43792162FBBE72500054E8B /* TaggerApp.swift */,
+				B43792132FBBE72500054E8B /* Views */,
+				B43792252FBBE7DE00054E8B /* ViewModels */,
+				B437921B2FBBE73700054E8B /* Assets */,
+			);
+			path = "WaifuDiffusion Tagger";
+			sourceTree = "<group>";
+		};
+		B437921B2FBBE73700054E8B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				B43792142FBBE72500054E8B /* Assets.xcassets */,
+				B43792342FBC175400054E8B /* AppIcon.icon */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		B43792252FBBE7DE00054E8B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B43792262FBBE7E800054E8B /* Coordinator.swift */,
+				B43792282FBBEB6000054E8B /* ThresholdParameters.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +125,11 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				B43792062FBBE71500054E8B /* WaifuDiffusion Tagger */,
-			);
 			name = "WaifuDiffusion Tagger";
 			packageProductDependencies = (
+				B437921D2FBBE75300054E8B /* ViewCollection */,
+				B43792202FBBE75B00054E8B /* Defaults */,
+				B43792232FBBE7AE00054E8B /* swift-wd-tagger */,
 			);
 			productName = "WaifuDiffusion Tagger";
 			productReference = B43792042FBBE71500054E8B /* WaifuDiffusion Tagger.app */;
@@ -94,6 +159,11 @@
 			);
 			mainGroup = B43791FB2FBBE71500054E8B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				B437921C2FBBE75300054E8B /* XCRemoteSwiftPackageReference "ViewCollection" */,
+				B437921F2FBBE75B00054E8B /* XCRemoteSwiftPackageReference "Defaults" */,
+				B43792222FBBE7AE00054E8B /* XCLocalSwiftPackageReference "../../Packages/swift-wd-tagger" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = B43792052FBBE71500054E8B /* Products */;
 			projectDirPath = "";
@@ -109,6 +179,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B43792182FBBE72500054E8B /* Assets.xcassets in Resources */,
+				B43792352FBC175400054E8B /* AppIcon.icon in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B437922F2FBBF20300054E8B /* ThresholdsView.swift in Sources */,
+				B43792192FBBE72500054E8B /* ContentView.swift in Sources */,
+				B437922B2FBBEC4800054E8B /* ThresholdEditor.swift in Sources */,
+				B43792332FBBF75000054E8B /* TagsView.swift in Sources */,
+				B43792312FBBF22600054E8B /* DetailsView.swift in Sources */,
+				B43792292FBBEB6B00054E8B /* ThresholdParameters.swift in Sources */,
+				B437921A2FBBE72500054E8B /* TaggerApp.swift in Sources */,
+				B43792272FBBE7EA00054E8B /* Coordinator.swift in Sources */,
+				B437922D2FBBF1E500054E8B /* InputImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +432,49 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B43792222FBBE7AE00054E8B /* XCLocalSwiftPackageReference "../../Packages/swift-wd-tagger" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../../Packages/swift-wd-tagger";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B437921C2FBBE75300054E8B /* XCRemoteSwiftPackageReference "ViewCollection" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Vaida12345/ViewCollection.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		B437921F2FBBE75B00054E8B /* XCRemoteSwiftPackageReference "Defaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Vaida12345/Defaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B437921D2FBBE75300054E8B /* ViewCollection */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B437921C2FBBE75300054E8B /* XCRemoteSwiftPackageReference "ViewCollection" */;
+			productName = ViewCollection;
+		};
+		B43792202FBBE75B00054E8B /* Defaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B437921F2FBBE75B00054E8B /* XCRemoteSwiftPackageReference "Defaults" */;
+			productName = Defaults;
+		};
+		B43792232FBBE7AE00054E8B /* swift-wd-tagger */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "swift-wd-tagger";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B43791FC2FBBE71500054E8B /* Project object */;
 }
