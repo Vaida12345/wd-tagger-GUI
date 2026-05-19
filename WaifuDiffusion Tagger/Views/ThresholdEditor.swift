@@ -18,7 +18,7 @@ struct ThresholdEditor: View {
     
     var body: some View {
         Section {
-            LabeledContent(title) {
+            LabeledContent {
                 TextField("", value: $value.clamp(to: 0...1), format: .number.precision(.fractionLength(2)))
                     .help("Only tags with a confidence above this value will be shown.")
                     .multilineTextAlignment(.trailing)
@@ -26,6 +26,8 @@ struct ThresholdEditor: View {
                     .onSubmit {
                         coordinator.updateCollectedResults()
                     }
+            } label: {
+                Text(title)
             }
             
             Slider(value: $value) {
