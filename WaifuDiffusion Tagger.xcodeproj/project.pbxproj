@@ -21,6 +21,8 @@
 		B43792312FBBF22600054E8B /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43792302FBBF22400054E8B /* DetailsView.swift */; };
 		B43792332FBBF75000054E8B /* TagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B43792322FBBF74B00054E8B /* TagsView.swift */; };
 		B43792352FBC175400054E8B /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = B43792342FBC175400054E8B /* AppIcon.icon */; };
+		B4E4AEA62FBC37200074462D /* RatingTagsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4AEA52FBC37200074462D /* RatingTagsView.swift */; };
+		B4E4AEA82FBC39C60074462D /* RatingTagsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E4AEA72FBC39C00074462D /* RatingTagsViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		B43792302FBBF22400054E8B /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		B43792322FBBF74B00054E8B /* TagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsView.swift; sourceTree = "<group>"; };
 		B43792342FBC175400054E8B /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		B4E4AEA52FBC37200074462D /* RatingTagsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTagsView.swift; sourceTree = "<group>"; };
+		B4E4AEA72FBC39C00074462D /* RatingTagsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingTagsViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				B437922C2FBBF1E300054E8B /* InputImageView.swift */,
 				B43792302FBBF22400054E8B /* DetailsView.swift */,
 				B43792322FBBF74B00054E8B /* TagsView.swift */,
+				B4E4AEA52FBC37200074462D /* RatingTagsView.swift */,
+				B4E4AEA72FBC39C00074462D /* RatingTagsViewCell.swift */,
 				B437922E2FBBF20000054E8B /* ThresholdsView.swift */,
 				B437922A2FBBEC4400054E8B /* ThresholdEditor.swift */,
 			);
@@ -198,6 +204,8 @@
 				B43792312FBBF22600054E8B /* DetailsView.swift in Sources */,
 				B43792292FBBEB6B00054E8B /* ThresholdParameters.swift in Sources */,
 				B437921A2FBBE72500054E8B /* TaggerApp.swift in Sources */,
+				B4E4AEA82FBC39C60074462D /* RatingTagsViewCell.swift in Sources */,
+				B4E4AEA62FBC37200074462D /* RatingTagsView.swift in Sources */,
 				B43792272FBBE7EA00054E8B /* Coordinator.swift in Sources */,
 				B437922D2FBBF1E500054E8B /* InputImageView.swift in Sources */,
 			);

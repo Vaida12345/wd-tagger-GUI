@@ -20,21 +20,23 @@ struct InputImageView: View {
     @State private var showFileImporter = false
     
     var body: some View {
-        GroupBox("Input") {
+        GroupBox {
             if let image = coordinator.image {
                 ZStack(alignment: .bottom) {
                     Image(nativeImage: NativeImage(cgImage: image))
                         .resizable()
                         .aspectRatio(contentMode: .fit)
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                     
                     Button {
-                        coordinator.reset()
                         showFileImporter = true
                     } label: {
                         Label("Replace image...", systemImage: "photo.badge.arrow.down")
+                            .foregroundStyle(Color(light: { .black }, dark: { .white }))
                     }
                     .buttonStyle(.prominent)
+                    .tint(.clear)
                     .padding()
                 }
             } else {
@@ -47,7 +49,6 @@ struct InputImageView: View {
                         .fontWeight(.light)
                     
                     Button {
-                        coordinator.reset()
                         showFileImporter = true
                     } label: {
                         Label("Add image...", systemImage: "photo.badge.plus")
@@ -59,6 +60,8 @@ struct InputImageView: View {
         }
         .frame(width: 300, height: 300)
         .fileImporter(isPresented: $showFileImporter, allowedContentTypes: [.image]) { result in
+            coordinator.reset()
+            
             withErrorPresented("Failed to load image") {
                 let url = try result.get()
                 _ = url.startAccessingSecurityScopedResource()

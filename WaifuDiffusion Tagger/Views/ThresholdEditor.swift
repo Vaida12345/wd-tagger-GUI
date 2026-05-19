@@ -31,7 +31,7 @@ struct ThresholdEditor: View {
             }
             
             Slider(value: $value) {
-                guard $0 else { return }
+                guard !$0 else { return }
                 coordinator.updateCollectedResults()
             }
         }

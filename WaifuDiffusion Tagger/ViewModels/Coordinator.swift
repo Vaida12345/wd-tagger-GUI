@@ -64,8 +64,8 @@ final class Coordinator {
         self.collectedResults = results.collected(
             thresholds: [
                 .character : character ?? Float(Defaults.standard.characterThreshold),
-                .general : general ?? Float(Defaults.standard.ratingThreshold),
-                .rating : rating ?? Float(Defaults.standard.generalThreshold)
+                .general : general ?? Float(Defaults.standard.generalThreshold),
+                .rating : rating ?? Float(Defaults.standard.ratingThreshold)
             ]
         )
     }
@@ -96,7 +96,7 @@ final class Coordinator {
             case .awaitingInput:
                 "Waiting Input"
             case .loadingModel:
-                "Loading Model"
+                "Preparing Model"
             case .predicting:
                 "Predicting"
             case .showingResults:

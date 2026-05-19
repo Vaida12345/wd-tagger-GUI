@@ -50,7 +50,7 @@ struct ContentView: View {
             }
         }
         .ignoresSafeArea()
-        .frame(height: 540)
+        .frame(height: 500)
         .overlay {
             if isDropTargeted {
                 Rectangle()

@@ -27,8 +27,6 @@ struct ThresholdsView: View {
             ThresholdEditor(title: "General", value: $generalThreshold)
             Divider()
             ThresholdEditor(title: "Character", value: $characterThreshold)
-            Divider()
-            ThresholdEditor(title: "Rating", value: $ratingThreshold)
         }
     }
     

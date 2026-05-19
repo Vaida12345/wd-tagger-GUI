@@ -26,6 +26,7 @@ struct TagsView: View {
                         } label: {
                             HStack {
                                 Text(tag.probability, format: .number.precision(.fractionLength(2)))
+                                    .foregroundStyle(.secondary)
                                 
                                 Text(tag.name)
                                     .frame(maxWidth: .infinity, alignment: .leading)

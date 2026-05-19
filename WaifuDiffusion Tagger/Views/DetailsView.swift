@@ -16,26 +16,24 @@ struct DetailsView: View {
     var body: some View {
         if let collected = coordinator.collectedResults {
             ScrollView {
-                VStack(alignment: .leading, spacing: 15) {
+                VStack(alignment: .leading, spacing: 3) {
                     if let tags = collected[.general] {
                         TagsView(title: "General Tags", tags: tags)
+                        
+                        Text("Click on a tag to copy")
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .foregroundStyle(.secondary)
+                            .font(.footnote)
+                            .padding(.leading, 5)
+                            .padding(.bottom, 12)
                     }
                     
                     if let tags = collected[.character] {
                         TagsView(title: "Character Tags", tags: tags)
+                            .padding(.bottom, 12)
                     }
                     
-                    if let tags = collected[.rating] {
-                        TagsView(title: "Rating Tags", tags: tags)
-                    }
-                    
-                    Text("Click on a tag to copy")
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .foregroundStyle(.secondary)
-                        .font(.footnote)
-                        .padding(.leading, 5)
-                        .padding(.bottom)
-                        .offset(y: -12)
+                    RatingTagsView(tags: collected[.rating] ?? [])
                 }
                 .padding()
             }
