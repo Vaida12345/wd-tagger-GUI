@@ -32,7 +32,7 @@ struct InputImageView: View {
                     Button {
                         showFileImporter = true
                     } label: {
-                        Label("Replace image...", systemImage: "photo.badge.arrow.down")
+                        Label("Replace image...", systemImage: "photo.badge.plus")
                             .foregroundStyle(Color(light: { .black }, dark: { .white }))
                     }
                     .buttonStyle(.prominent)

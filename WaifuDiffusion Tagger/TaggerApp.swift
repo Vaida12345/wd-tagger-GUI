@@ -11,6 +11,7 @@ import SwiftUI
 struct TaggerApp: App {
     
     @State var coordinator: Coordinator
+    @Environment(\.openURL) private var openURL
     
     var body: some Scene {
         Window("Tagger", id: "main") {
@@ -20,6 +21,17 @@ struct TaggerApp: App {
         .windowIdealSize(.fitToContent)
         .windowResizability(.contentSize)
         .windowStyle(.hiddenTitleBar)
+        .commands {
+            CommandGroup(replacing: .help) {
+                Button {
+                    if let url = URL(string: "https://github.com/Vaida12345/wd-tagger-GUI") {
+                        openURL(url)
+                    }
+                } label: {
+                    Label("Github Repo", systemImage: "globe")
+                }
+            }
+        }
     }
     
     init() {

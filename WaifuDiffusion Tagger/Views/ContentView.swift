@@ -59,7 +59,7 @@ struct ContentView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    Image(systemName: "photo.badge.plus")
+                    Image(systemName: "photo.badge.arrow.down")
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 100, height: 100)
