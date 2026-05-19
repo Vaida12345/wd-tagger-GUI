@@ -43,7 +43,7 @@ struct ContentView: View {
         } isTargeted: {
             isDropTargeted = $0
         }
-        .task(id: coordinator.image) {
+        .task(id: coordinator.image, priority: .utility) {
             guard coordinator.image != nil else { return }
             await withErrorPresented("Failed to predict tags") {
                 try await coordinator.predict()
